@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: ems
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://supadilo-dev-postgress.c5z4akm0darz.us-east-1.rds.amazonaws.com:5432/ems-dev
+    username: root
+    password: Rwanda2020
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 8080
+
+
+logging:
+  level:
+    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: ERROR
